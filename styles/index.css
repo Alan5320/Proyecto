@@ -1,0 +1,61 @@
+body {
+    background: #e5e4e4;
+}
+
+* {
+    font-family: calibri;
+
+}
+
+
+.frase-content {
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    background-color: #62b5e4;
+}
+
+.frase-principal {
+    font-family: Arial;
+    font-style: italic;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    /* Coloca los elementos al final del contenedor */
+    align-items: center;
+    padding: 15px;
+}
+
+.logo img {
+    width: 100%;
+    margin: 10px;
+    /* Tamaño del logo al 100% */
+    max-width: 150px;
+    /* Ajusta el ancho máximo del logo */
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: black;
+    font-style: bold;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.video-content {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+}
+
+.video-box {
+    width: 600px;
+    height: 350px;
+}
