@@ -10,7 +10,7 @@ body {
 
 .frase-content {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     padding-left: 80px;
     background-color: #9acce2;
 }
@@ -30,7 +30,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     margin: 0 30px;
     align-items: center;
 }
@@ -79,14 +79,14 @@ body {
 
 .video-content {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     margin: 0px 80px 150px;
+    max-width: 100%;
 }
 
 .eslogan-content {
     display: flex;
-    justify-content: left;
-    margin-left: 80px;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -99,4 +99,18 @@ body {
     font-size: 20px;
 }
 
-.video-box {}
+.autos-boton {
+    align-items: center;
+
+    display: flex;
+
+
+}
+
+.autos-boton-a {
+    background-color: #9acce2;
+    font-size: 30px;
+    padding: 10px 30px;
+    justify-content: right;
+    color: white;
+}
