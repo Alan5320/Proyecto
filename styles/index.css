@@ -8,6 +8,7 @@ body {
 }
 
 
+
 .frase-content {
     display: flex;
     justify-content: center;
@@ -39,10 +40,6 @@ body {
     display: flex;
     justify-content: space-around;
 }
-
-
-
-
 
 .navbar a {
     color: black;
@@ -79,15 +76,19 @@ body {
 
 .video-content {
     display: flex;
-    justify-content: center;
-    margin: 0px 80px 30px;
-    max-width: 100%;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    max-width: 220px;
 }
+
+
 
 .eslogan-content {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .eslogan-box {
@@ -108,7 +109,7 @@ body {
 
 .autos-boton-a {
     background-color: #9acce2;
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px 30px;
     justify-content: center;
     color: white;
