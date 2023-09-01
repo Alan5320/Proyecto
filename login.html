@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>ITM CAR DELUXE | Login</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menu-toggle");
+            const menu = document.querySelector(".menu");
+
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("show-menu");
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginForm = document.querySelector(".login-form");
+
+            loginForm.addEventListener("submit", function (event) {
+                const cedula = document.getElementById("cedula");
+                const user = document.getElementById("user");
+                const email = document.getElementById("email");
+                const password = document.getElementById("password");
+
+                if (!cedula.value || !user.value || !password.value) {
+                    event.preventDefault();
+                    alert("Por favor, completa todos los campos.");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <div class="navbar">
+            <div class="logo-content">
+                <img src="imgs/car-logo.png" alt="Logo" width="100px;">
+            </div>
+            <b><a href="index.html">Inicio</a></b>
+            <b><a href="#">Autos</a></b>
+            <b><a href="#">Nosotros</a></b>
+            <b><a href="#">Contacto</a></b>
+            <div class="navar-logs">
+                <a href="login.html" style="margin-left: 100px;">Ingresar</a>
+                <a href="login.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Formularios LOG Y SING UP -->
+    <div class="forms-content">
+
+        <div class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <form id="myForm" action="procesar-formulario.php" method="POST">
+                <label for="text" id="cedula">Cedula</label>
+                <p> </p>
+                <input type="number" name="cedula" id="cedula" required>
+                <p></p>
+                <label for="text">Nombre de usuario</label>
+                <p> </p>
+                <input type="text" name="user" id="user" required>
+                <p> </p>
+                <p> </p>
+                <label for="mail">Correo</label>
+                <p> </p>
+                <input type="email" id="email" name="email" required>
+                <p> </p>
+                <label for="password">Contraseña</label>
+                <p> </p>
+                <input type="password" id="password" name="password" required>
+                <p> </p>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p> </p>
+            <a href="" style="text-decoration: none;">¿Has olvidado tu contraseña?</a>
+        </div>
+
+        <div class="register-form">
+            <h2>Registrarse</h2>
+            <form>
+                <label for="text">Crea un nombre de usuario</label>
+                <p> </p>
+                <input type="text" name="user" id="user" required>
+                <p> </p>
+                <label for="mail">Añade un correo</label>
+                <p> </p>
+                <input type="email" id="email" name="email" required>
+                <p> </p>
+                <label for="password">Crea una contraseña</label>
+                <p> </p>
+                <input type="password" id="password" name="password" required>
+                <p> </p>
+                <label for="password">Repite una contraseña</label>
+                <p> </p>
+                <input type="password" id="password" name="password" required>
+                <p> </p>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+    <!--Funcion de validacion para nuestro formulario-->
+
+
+</body>
+
+</html>

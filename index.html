@@ -7,38 +7,58 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <title>Alquiler de Autos</title>
+
+    <script>
+        // Verificar si el contador ya existe en el almacenamiento local
+        if (localStorage.getItem("visitCount")) {
+            let visitCount = parseInt(localStorage.getItem("visitCount"));
+            visitCount += 1;
+            localStorage.setItem("visitCount", visitCount);
+        } else {
+            localStorage.setItem("visitCount", "1");
+        }
+
+        // Mostrar el contador en un elemento en el HTML
+        window.addEventListener("DOMContentLoaded", function () {
+            const visitCounter = document.getElementById("visit-counter");
+            if (visitCounter) {
+                visitCounter.textContent = localStorage.getItem("visitCount");
+            }
+        });
+    </script>
+
+    <script src="scripts/index.js"></script>
+
 </head>
 
 <body>
 
     <!--Encabezado-->
-
     <header>
-
-        <!--Barra de navegacion por toda la pagina-->
-
-        <div class="navbar">
-            <div class="logo-content">
-                <img src="imgs/car-logo.png" alt="Logo" width="100px;">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imgs/car-logo.png" alt="Logo">
             </div>
-            <b><a href="index.html" id="page-active">Inicio</a></b>
-            <b><a href="#">Autos</a></b>
-            <b><a href="#">Nosotros</a></b>
-            <b><a href="#">Contacto</a></b>
-
-            <div class="navar-logs">
-                <a href="" style="margin-left: 100px;">Ingresar</a>
-                <a href="">Registrarse</a>
+            <div class="menu">
+                <ul>
+                    <li><a href="">INICIO</a></li>
+                    <li><a href="#">AUTOS</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
             </div>
-        </div>
-        <!--Botones de login y register-->
-
-
+            <div class="login-register">
+                <a href="login.html">Ingresar / Registrarse</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
         <div class="frase-content">
             <h1 class="frase-principal">¿Qué estás esperando para rentar el auto de tus sueños?</h1>
         </div>
-
-
     </header>
 
     <div class="eslogan-content">
@@ -60,7 +80,9 @@
 
     <div class="autos-boton">
         <b><a href="index.html#catalogo" class="autos-boton-a">Ver nuestra flota</a></b>
+        <div class="contador-visitas"><b>Num Visitas:</b> <span id="visit-counter"><b>0</b></span></div>
     </div>
+
 
 
 

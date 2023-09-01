@@ -24,54 +24,122 @@ body {
 
 }
 
-.logo-content {
-    margin-left: 40px;
+header {
+    color: #fff;
+    padding: 10px 0;
 }
 
+/* INICIO ESTILOS DE LA BARRA DE NAVEGACION */
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 0 30px;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.navar-logs {
+.logo img {
+    max-width: 100px;
+}
+
+.menu ul {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar a {
-    color: black;
+.menu ul li {
+    margin-right: 30px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
     text-decoration: none;
-    font-size: 20px;
-    margin-right: 50px;
-    border-radius: .4em;
-    padding: 5px 30px;
-    position: relative;
+    color: #000;
+    font-weight: bold;
+    transition: all 1.3s ease;
 }
 
-.navbar a:hover {
+.menu a:hover {
+    padding: 5px 10px;
+    background-color: #f3ad23;
+    border-radius: .4em;
+    transition: all 1.3s ease;
+}
+
+.login-register a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 1.3s ease;
+}
+
+.login-register a:hover {
+    padding: 5px 10px;
     background-color: #9acce2;
-    transition: 1.5s;
-}
-
-.navar-logs a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 0px 10px;
     border-radius: .4em;
-    padding: 5px 30px;
-    justify-content: right;
+    transition: all 1.3s ease;
 }
 
-.navar-logs a:hover {
 
-    background-color: #ffa800;
-    border-radius: .4em;
-    transition: 1.5s;
+
+/* Ajuste de barra de navegacion cuando la pantalla es mas pequeña*/
+
+@media screen and (max-width: 658px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .menu a {
+        padding: 10px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .login-register {
+        margin-top: 20px;
+    }
+
+    .login-register a {
+        font-size: 14px;
+    }
 }
+
+/* FIN ESTILOS PARA LA BARRA DE NAVEGACION */
+
+
 
 
 .video-content {
@@ -103,7 +171,10 @@ body {
 .autos-boton {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 100px;
+    padding: 20px;
+    border: outset #9ACDE2 3px;
 
 }
 
@@ -111,6 +182,14 @@ body {
     background-color: #9acce2;
     font-size: 25px;
     padding: 10px 30px;
+    justify-content: center;
+    color: white;
+}
+
+.contador-visitas {
+    background-color: #9acce2;
+    font-size: 25px;
+    padding: 11px 30px;
     justify-content: center;
     color: white;
 }

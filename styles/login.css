@@ -1,0 +1,77 @@
+.forms-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    display: block;
+    width: 113%;
+    padding: 10px;
+    background-color: #9acce2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form {
+    border: outset #9ACDE2 3px;
+    border-radius: 5px;
+    padding: 40px 130px;
+}
+
+.register-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-form button {
+    display: block;
+    width: 113%;
+    padding: 10px;
+    background-color: #9acce2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-form {
+    border: outset #9ACDE2 3px;
+    border-radius: 5px;
+    padding: 40px 130px;
+}
