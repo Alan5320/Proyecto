@@ -60,6 +60,7 @@ header {
 }
 
 .menu a {
+    padding: 5px 10px;
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -67,13 +68,14 @@ header {
 }
 
 .menu a:hover {
-    padding: 5px 10px;
+
     background-color: #f3ad23;
     border-radius: .4em;
     transition: all 1.3s ease;
 }
 
 .login-register a {
+    padding: 5px 10px;
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -83,7 +85,6 @@ header {
 }
 
 .login-register a:hover {
-    padding: 5px 10px;
     background-color: #9acce2;
     border-radius: .4em;
     transition: all 1.3s ease;
@@ -121,7 +122,7 @@ header {
     }
 
     .menu a {
-        padding: 10px;
+        padding: 0 20px;
         text-decoration: none;
         color: #000000;
         font-weight: bold;

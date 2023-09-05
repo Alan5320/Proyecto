@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/log-reg.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>ITM CAR DELUXE | Login</title>
+
+
+
+</head>
+
+<body>
+
+    <!--Encabezado-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imgs/car-logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#">AUTOS</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="login-register">
+                <a href="login.html">Ingresar </a>
+                <a href="register.html">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Formulario REG -->
+    <div class="forms-content">
+
+        <div class="login-form">
+            <h2>Crea una nueva cuenta</h2>
+            <form id="RegForm">
+                <label for="cedula">Cedula</label>
+                <input type="number" name="cedula" id="cedula">
+
+                <label for="user">Correo</label>
+                <input type="email" name="email" id="email">
+
+                <label for="password">Crea una nueva contraseña</label>
+                <input type="password" id="password1" name="password1">
+
+                <label for="password">Repite contraseña</label>
+                <input type="password" id="password2" name="password2">
+
+                <p id="error-message" style="color: red;"></p>
+
+                <button type="submit">Registrarse</button>
+
+                <p> </p>
+                <a href="login.html" style="text-decoration: none;">¿Ya tienes una cuenta?</a>
+        </div>
+
+
+    </div>
+    <!--Funcion de validacion para nuestro formulario-->
+    <script>
+        document.getElementById("RegForm").addEventListener("submit", function (event) {
+            const password = document.getElementById("password1").value;
+            const password2 = document.getElementById("password2").value;
+            const email = document.getElementById("email").value;
+            const cedula = document.getElementById("cedula").value;
+            const errorMessage = document.getElementById("error-message");
+
+
+            if (!password || !password2 || !email || !cedula) {
+                alert("Por favor, llene todos los campos.");
+                event.preventDefault();
+            }
+            if (password != password2) {
+                errorMessage.textContent = "Las contraseñas no coinciden";
+                event.preventDefault();
+            }
+            if (cedula.length !== 10) {
+                errorMessage.textContent = "La cédula debe tener 10 dígitos";
+                event.preventDefault();
+            }
+            if (password.length < 8) {
+                errorMessage.textContent = "La contraseña debe tener al menos 8 caracteres";
+                event.preventDefault();
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
