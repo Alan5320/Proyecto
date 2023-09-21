@@ -2,3 +2,28 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+.fotos-content{
+    display: flex;
+    justify-content:space-around;
+}
+
+.fotos-content p{
+    width: 100%;
+}
+
+.nombres-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nombres-content-special{
+    display: flex;
+    justify-content: center;
+}
+
+
+.nosotros-foto-alan{
+    width: 200px;
+    border-radius: 100%;
+}
