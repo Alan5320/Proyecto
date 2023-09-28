@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/flota.css">
+    <title>Alquiler de Autos</title>
+
+    <script>
+        // Verificar si el contador ya existe en el almacenamiento local
+        if (localStorage.getItem("visitCount")) {
+            let visitCount = parseInt(localStorage.getItem("visitCount"));
+            visitCount += 1;
+            localStorage.setItem("visitCount", visitCount);
+        } else {
+            localStorage.setItem("visitCount", "1");
+        }
+
+        // Mostrar el contador en un elemento en el HTML
+        window.addEventListener("DOMContentLoaded", function () {
+            const visitCounter = document.getElementById("visit-counter");
+            if (visitCounter) {
+                visitCounter.textContent = localStorage.getItem("visitCount");
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!--Encabezado-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imgs/car-logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="flota.html">AUTOS</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="login-register">
+                <a href="login.html">Ingresar </a>
+                <a href="register.html">Registrarse</a>
+            </div>
+        </nav>
+        
+    </header>
+    <div class="frase-content-fixed">
+        <div class="frase-content" style="position: sticky;">
+            <h1 class="frase-principal">¿Ya elegiste tu auto soñado?</h1>
+        </div>
+    </div>
+
+    <p style="font-size: 50px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium officia sunt a expedita assumenda iste accusantium corrupti ratione consequuntur eaque, beatae odio distinctio vero magnam eum pariatur, voluptate blanditiis?</p>
+
+</body>
+
+</html>
