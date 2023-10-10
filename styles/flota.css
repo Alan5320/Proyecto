@@ -9,3 +9,35 @@
     right: 0;
     z-index: 100;
 }
+
+
+.containter{
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.auto {
+    border: outset #9ACDE2 2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    height: auto;
+    background-color: white;
+
+}
+
+.auto img {
+    max-width: 100%;
+    height: 300px;
+}
