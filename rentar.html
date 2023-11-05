@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/log-reg.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>ITM CAR DELUXE | Login</title>
+
+
+
+</head>
+
+<body>
+
+    <!--Encabezado-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imgs/car-logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="flota.html">AUTOS</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="login-register">
+                <a href="login.html">Ingresar </a>
+                <a href="register.html">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Formulario LOG -->
+    <div class="forms-content">
+
+        <div class="login-form">
+            <h2>Rentar el auto</h2>
+            <form id="loginForm">
+                <label for="cedula">Fecha de inicio</label>
+                <input type="datetime" name="cedula" id="cedula">
+
+                <label for="user">Fecha de finalizacion</label>
+                <input type="datetime" name="user" id="user">
+
+                <label for="email"> Color que desea en su vehiculo</label>
+                <input type="color" id="email" name="email">
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password">
+
+                <p></p>
+
+                <button type="submit">RENTALO AHORA</button>
+
+                
+        </div>
+
+
+    </div>
+    <!--Funcion de validacion para nuestro formulario-->
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            const user = document.getElementById("user").value;
+            const password = document.getElementById("password").value;
+            const email = document.getElementById("email").value;
+            const cedula = document.getElementById("cedula").value;
+
+            if (!user || !password || !email || !cedula) {
+                alert("Por favor, llene todos los campos.");
+                event.preventDefault();
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
